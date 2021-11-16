@@ -1,0 +1,16 @@
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ahorcado
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ahorcado.deps.json
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ahorcado.runtimeconfig.json
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ahorcado.runtimeconfig.dev.json
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ahorcado.dll
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ref/ahorcado.dll
+/home/gaston/Programacion web ispc/ahorcado/bin/Debug/net5.0/ahorcado.pdb
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.csproj.AssemblyReference.cache
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.GeneratedMSBuildEditorConfig.editorconfig
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.AssemblyInfoInputs.cache
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.AssemblyInfo.cs
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.csproj.CoreCompileInputs.cache
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.dll
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ref/ahorcado.dll
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.pdb
+/home/gaston/Programacion web ispc/ahorcado/obj/Debug/net5.0/ahorcado.genruntimeconfig.cache
