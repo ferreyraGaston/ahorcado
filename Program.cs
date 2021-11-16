@@ -6,12 +6,20 @@ namespace ahorcado
 {
 static void Main(string[] args)
 {
+
+        Console.BackgroundColor=ConsoleColor.DarkBlue; //definimos el color de fondo
+        Console.ForegroundColor=ConsoleColor.White;  //definimos el text
+        Console.Clear();
+
 String palabra;
 int n;
 Console.WriteLine("Cuantas letras es tu palabra incognita");
+Console.ForegroundColor=ConsoleColor.Yellow;  //definimos el text
 n= Convert.ToInt32(Console.ReadLine());
 
+Console.ForegroundColor=ConsoleColor.White;  //definimos el text
 Console.WriteLine("ingrese la palabra incognita");
+Console.ForegroundColor=ConsoleColor.Yellow;  //definimos el text
 palabra= Console.ReadLine();
 
 // la palabra es representada por guiones  ---
@@ -32,13 +40,16 @@ bool terminado=false;
 // parte repetitiva 
 do{
 
+Console.Clear();
 
 // se muestra la palabra oculta y el usuario elige una letra
+Console.ForegroundColor=ConsoleColor.White;  //definimos el text
 Console.WriteLine("Palabra oculta: {0}",palabraMostrar);
 Console.WriteLine("Fallos restantes: {0}",fallosRestantes);
 
 // el usuario eligue una letra
 Console.Write("ingrese una letra: ");
+Console.ForegroundColor=ConsoleColor.Yellow;  //definimos el text
 letraActual=Convert.ToChar(Console.ReadLine());
 
 // si la letra es un error el contador de fallos descrementa
@@ -78,13 +89,6 @@ Console.WriteLine();
 
 while(!terminado);
 Console.WriteLine();
-
-
-
-
-
-
-
 
 }
     }
