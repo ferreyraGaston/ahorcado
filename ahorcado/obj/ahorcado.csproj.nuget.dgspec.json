@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gaston/Programacion web ispc/ahorcado/ahorcado.csproj": {}
+    "/home/gaston/Programacion web ispc/ahorcado/ahorcado/ahorcado.csproj": {}
   },
   "projects": {
-    "/home/gaston/Programacion web ispc/ahorcado/ahorcado.csproj": {
+    "/home/gaston/Programacion web ispc/ahorcado/ahorcado/ahorcado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gaston/Programacion web ispc/ahorcado/ahorcado.csproj",
+        "projectUniqueName": "/home/gaston/Programacion web ispc/ahorcado/ahorcado/ahorcado.csproj",
         "projectName": "ahorcado",
-        "projectPath": "/home/gaston/Programacion web ispc/ahorcado/ahorcado.csproj",
+        "projectPath": "/home/gaston/Programacion web ispc/ahorcado/ahorcado/ahorcado.csproj",
         "packagesPath": "/home/gaston/.nuget/packages/",
-        "outputPath": "/home/gaston/Programacion web ispc/ahorcado/obj/",
+        "outputPath": "/home/gaston/Programacion web ispc/ahorcado/ahorcado/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gaston/.nuget/NuGet/NuGet.Config"

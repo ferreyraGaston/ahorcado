@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+UKAH+NIvRXp0ByJVbgVlLTtVBGqQ+UhsGbI3liE5JYB/+8U1VhKAIZZqz63ZrAnT5RKX8zBrM9sYppHZGdpHg==",
+  "dgSpecHash": "dYXTvBT7wShhr9xHgohJjea9hKkZB9kyz3YkvjVtocLgEW9ibycLm0WrYzTS3MFYMkb0Dgnrz2BmeDcG/yJvfA==",
   "success": true,
-  "projectFilePath": "/home/gaston/Programacion web ispc/ahorcado/ahorcado.csproj",
+  "projectFilePath": "/home/gaston/Programacion web ispc/ahorcado/ahorcado/ahorcado.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
