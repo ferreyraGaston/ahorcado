@@ -33,14 +33,14 @@ palabraMostrar=palabraMostrar+"-";
 
 
 //Varables
-int fallosRestantes=9;
+int fallosRestantes=7;
 Char letraActual;
 bool terminado=false;
 
 // parte repetitiva 
 do{
 
-Console.Clear();
+
 
 // se muestra la palabra oculta y el usuario elige una letra
 Console.ForegroundColor=ConsoleColor.White;  //definimos el text
@@ -55,6 +55,113 @@ letraActual=Convert.ToChar(Console.ReadLine());
 // si la letra es un error el contador de fallos descrementa
 if(palabra.IndexOf(letraActual)== -1)
 fallosRestantes--;
+
+
+
+switch(fallosRestantes)
+{
+    case 7: 
+    Console.WriteLine("     -----------      ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");
+    Console.WriteLine("    |                   ");       
+    Console.WriteLine("    |                   ");
+    break;
+
+    case 6: 
+    Console.WriteLine("     -----------          ");
+    Console.WriteLine("    |          ( )         ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");       
+    Console.WriteLine("    |                     ");
+    break;
+
+    case 5: 
+    Console.WriteLine("     -----------          ");
+    Console.WriteLine("    |          ( )         ");
+    Console.WriteLine("    |           |          ");
+    Console.WriteLine("    |           |          ");
+    Console.WriteLine("    |           |          ");
+    Console.WriteLine("    |           |          ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");       
+    Console.WriteLine("    |                     ");
+    break;
+
+    case 4: 
+    Console.WriteLine("     -----------          ");
+    Console.WriteLine("    |          ( )         ");
+    Console.WriteLine("    |       ----|          ");
+    Console.WriteLine("    |       |   |          ");
+    Console.WriteLine("    |       |   |          ");
+    Console.WriteLine("    |           |          ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");       
+    Console.WriteLine("    |                     ");     
+    break;
+
+    case 3: 
+    Console.WriteLine("     -----------          ");
+    Console.WriteLine("    |          ( )         ");
+    Console.WriteLine("    |       ----|----      ");
+    Console.WriteLine("    |       |   |   |      ");
+    Console.WriteLine("    |       |   |   |      ");
+    Console.WriteLine("    |           |          ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");
+    Console.WriteLine("    |                     ");       
+    Console.WriteLine("    |                     ");       
+    
+    break;
+
+    case 2: 
+    Console.WriteLine("     -----------          ");
+    Console.WriteLine("    |          ( )         ");
+    Console.WriteLine("    |       ----|----      ");
+    Console.WriteLine("    |       |   |   |      ");
+    Console.WriteLine("    |       |   |   |      ");
+    Console.WriteLine("    |         __|          ");
+    Console.WriteLine("    |         |            ");
+    Console.WriteLine("    |         |            ");
+    Console.WriteLine("    |         |            ");
+    Console.WriteLine("    |                     ");       
+    Console.WriteLine("    |                     "); 
+    break;
+
+    case 1: 
+    Console.WriteLine("     -----------          ");
+    Console.WriteLine("    |          ( )         ");
+    Console.WriteLine("    |       ----|----      ");
+    Console.WriteLine("    |       |   |   |      ");
+    Console.WriteLine("    |       |   |   |      ");
+    Console.WriteLine("    |         __|___       ");
+    Console.WriteLine("    |         |    |       ");
+    Console.WriteLine("    |         |    |       ");
+    Console.WriteLine("    |         |    |       ");
+    Console.WriteLine("    |                      ");       
+    Console.WriteLine("    |                      "); 
+    break;
+
+
+}
+
 
 //si la letra pertenece a la palabra, el jugador
 //no pierde el intento y descubre una de las incognitas
@@ -73,18 +180,67 @@ palabraMostrar=siguienteMostrar;
 // si se adivina la palabra o si pierde por los intenos
 if(palabraMostrar.IndexOf("-")<0)
 {
-    Console.WriteLine("*******Felicidades*****");
+    Console.BackgroundColor=ConsoleColor.Green; //definimos el color de fondo
+    Console.ForegroundColor=ConsoleColor.Black;  //definimos el text
+    Console.Clear();
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("***************Felicidades**************");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("");
     Console.WriteLine("Pla Palabra es: {0}",palabra);
-    Console.WriteLine("*******Felicidades*****");
+    Console.WriteLine("");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("***************Felicidades**************");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
     terminado=true;
 }
 
 if(fallosRestantes==0)
 {
+    Console.BackgroundColor=ConsoleColor.Red; //definimos el color de fondo    Console.BackgroundColor=ConsoleColor.DarkBlue; //definimos el color de fondo
+    Console.ForegroundColor=ConsoleColor.Black;  //definimos el text
+    Console.Clear();
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("");
     Console.WriteLine("lo suento, la palabrea era: {0}",palabra);
+    Console.WriteLine("");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("****************************************");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
+    Console.WriteLine("");
     terminado=true;
 }
 Console.WriteLine();
+//Console.Clear();
 }
 
 while(!terminado);
