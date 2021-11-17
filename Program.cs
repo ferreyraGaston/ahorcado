@@ -20,14 +20,14 @@ n= Convert.ToInt32(Console.ReadLine());
 Console.ForegroundColor=ConsoleColor.White;  //definimos el text
 Console.WriteLine("ingrese la palabra incognita");
 Console.ForegroundColor=ConsoleColor.Yellow;  //definimos el text
-palabra= Console.ReadLine();
+palabra= Console.ReadLine(); // silla
 
 // la palabra es representada por guiones  ---
 string palabraMostrar="";
 
 for(int i=0; i<n; i++)
-if(palabra[i]==' ')
-palabraMostrar=palabraMostrar+"";
+if(palabra[i]== ' ')
+palabraMostrar=palabraMostrar+" ";
 else
 palabraMostrar=palabraMostrar+"-";
 
@@ -39,9 +39,6 @@ bool terminado=false;
 
 // parte repetitiva 
 do{
-
-
-
 // se muestra la palabra oculta y el usuario elige una letra
 Console.ForegroundColor=ConsoleColor.White;  //definimos el text
 Console.WriteLine("Palabra oculta: {0}",palabraMostrar);
@@ -53,10 +50,13 @@ Console.ForegroundColor=ConsoleColor.Yellow;  //definimos el text
 letraActual=Convert.ToChar(Console.ReadLine());
 
 // si la letra es un error el contador de fallos descrementa
+
+//¿Qué es IndexOf C#?
+//Para ver si una cadena contiene un cierto texto, que nos dice en qué posición se encuentra 
+//(o devuelve el valor -1 si no aparece)
+
 if(palabra.IndexOf(letraActual)== -1)
 fallosRestantes--;
-
-
 
 switch(fallosRestantes)
 {
@@ -178,6 +178,7 @@ for(int i=0; i<n;i++)
 palabraMostrar=siguienteMostrar;
 
 // si se adivina la palabra o si pierde por los intenos
+//determinar si un caracter se encuentra presente dentro de un string 
 if(palabraMostrar.IndexOf("-")<0)
 {
     Console.BackgroundColor=ConsoleColor.Green; //definimos el color de fondo
@@ -194,7 +195,7 @@ if(palabraMostrar.IndexOf("-")<0)
     Console.WriteLine("***************Felicidades**************");
     Console.WriteLine("****************************************");
     Console.WriteLine("");
-    Console.WriteLine("Pla Palabra es: {0}",palabra);
+    Console.WriteLine("la Palabra es: {0}",palabra);
     Console.WriteLine("");
     Console.WriteLine("****************************************");
     Console.WriteLine("***************Felicidades**************");
@@ -225,7 +226,7 @@ if(fallosRestantes==0)
     Console.WriteLine("****************************************");
     Console.WriteLine("****************************************");
     Console.WriteLine("");
-    Console.WriteLine("lo suento, la palabrea era: {0}",palabra);
+    Console.WriteLine("lo siento, la palabra era: {0}",palabra);
     Console.WriteLine("");
     Console.WriteLine("****************************************");
     Console.WriteLine("****************************************");
@@ -240,10 +241,10 @@ if(fallosRestantes==0)
     terminado=true;
 }
 Console.WriteLine();
-//Console.Clear();
+
 }
 
-while(!terminado);
+while(!terminado); // sale del boot con true
 Console.WriteLine();
 
 }
